@@ -1,0 +1,22 @@
+Client : la startup Foodies, qui souhaite proposer un service en ligne répertoriant les cafés, bars et restaurants à Paris et permettant aux clients de les évaluer.
+
+Projet : Développer l'interface web du service Foodies.
+
+Organisation de l'interface :
+- Le site web doit être responsive ;
+- Il doit se composer :
+-- d'un header avec :
+--- une navbar contenant (sur grand écran) à gauche le logo du service, à droite 5 liens de navigation vers les pages du site - la navbar se transforme en menu hamburger sur petit écran,
+--- d'un slider permettant de faire défiler 3 photos (avec puces pour la navigation centrées horizontalement et positionnées verticalement en bas du slider),
+--- de deux barres de recherches (par lieux ou par mots-clés),
+-- une section avec :
+--- sur grand écran, de plusieurs lignes contenant 3 colones, chaque colone contient une carte avec la photo du lieu, son nom et sa localisation, en blanc, superposés à la photo, et son évaluation sous formes d'étoiles (de 0 à 5),
+--- sur petit écran, chaque carte occupe toute la largeur,
+-- un footer :
+--- 4 colones, chacune étant une rubrique comportant des liens,
+--- une ligne contenant les mentions légales à gauche, les icones de réseaux sociaux à droite.
+
+Spécifications techniques :
+- maquette au format PSD « free website template psd by Shital Ravindra » : https://dribbble.com/shots/4006090-free-website-template-psd ;
+- Langages web : HTML / CSS / JavaScript ;
+- Framework : Bootstrap ;
