@@ -1,7 +1,47 @@
+/* Bandeau avec barre de recherche */
+.navigation{
+  background-color: #F3F7FA;
+}
 .search{
-  border: 2px solid red;
-  height: 100px;
+  height: 5em;
+  padding-top: 1em;
+}
+
+/*section avec les galeries d'images */
+section{
+  background-color: #F2F2F2;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 .card-deck{
+  /* carte des hotels, restaurants, bar, cafés les mieux notées */
   margin-top: 1.2em;
+}
+
+/* footer */
+.plan_site{
+  background-color: #011526;
+}
+.restaurant{
+  border: 1px solid orange;
+  text-align: left;
+
+}
+.website h5{
+  color: darkgrey;
+}
+.website ul, .foodies ul, .restaurant ul, .other ul{
+  list-style-type: none;
+  text-decoration: none;
+  text-align: left;
+}
+span{
+  height: 0.5em;
+
+}
+span:hover{
+  color: #8C4303;
+}
+.social_network a:active{
+  color: #734002;
 }
