@@ -1,6 +1,12 @@
+/* slider */
+h1{
+  font-family: 'Roboto', sans-serif;
+  color: #D18700;
+}
+
 /* Bandeau avec barre de recherche */
 .navigation{
-  background-color: #F3F7FA;
+  background-color: #FFFFFF;
 }
 .search{
   height: 5em;
@@ -13,28 +19,41 @@ section{
   padding-top: 4em;
   padding-bottom: 4em;
 }
+.header{
+  color: #212D40;
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding-bottom: 2em;
+}
 .card-deck{
   /* carte des hotels, restaurants, bar, cafés les mieux notées */
   margin-top: 1.2em;
+}
+.card-img-top{
+  height: 170.167px;
 }
 
 /* footer */
 .plan_site{
   background-color: #011526;
-}
-.restaurant{
-  border: 1px solid orange;
-  text-align: left;
+  padding-top: 3em;
 
 }
-.website h5{
-  color: darkgrey;
+.row{
+  padding-bottom: 2em;
 }
-.website ul, .foodies ul, .restaurant ul, .other ul{
-  list-style-type: none;
-  text-decoration: none;
-  text-align: left;
+.restaurant{
+
+  text-align: justify;
+
 }
+.website h5, .foodies h5, .restaurant h5{
+  color: #FF8800;
+  text-align: justify;
+}
+.other{
+
+}
+/* Mention legal */
 span{
   height: 0.5em;
 
@@ -44,4 +63,5 @@ span:hover{
 }
 .social_network a:active{
   color: #734002;
+  font-size: 0.5em;
 }
