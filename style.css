@@ -1,7 +1,21 @@
 /* slider */
-h1{
+.title-slider{
   font-family: 'Roboto', sans-serif;
   color: #D18700;
+  text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+  text-transform: uppercase;
+  font-size: 64px;
+}
+.text-slider{
+  font-size: 40px;
+  text-shadow: -1px 0 black, 0 1px black,
+          1px 0 black, 0 -1px black;
+}
+.nav-img{
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
 }
 
 /* Bandeau avec barre de recherche */
@@ -9,7 +23,7 @@ h1{
   background-color: #FFFFFF;
 }
 .search{
-  height: 5em;
+  /* height: 5em; */
   padding-top: 1em;
 }
 
@@ -21,8 +35,15 @@ section{
 }
 .header{
   color: #212D40;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding-bottom: 2em;
+  text-transform: uppercase;
+}
+.header p{
+  opacity: 0.5;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: lowercase;
+  font-size: 1em;
 }
 .card-deck{
   /* carte des hotels, restaurants, bar, cafés les mieux notées */
@@ -31,10 +52,13 @@ section{
 .card-img-top{
   height: 170.167px;
 }
+.star-color i{
+  color: #D18700; ;
+}
 
 /* footer */
-.plan_site{
-  background-color: #011526;
+.sitemap{
+  background-color: white;
   padding-top: 3em;
 
 }
@@ -42,13 +66,19 @@ section{
   padding-bottom: 2em;
 }
 .restaurant{
-
   text-align: justify;
-
 }
 .website h5, .foodies h5, .restaurant h5{
-  color: #FF8800;
+  color: #33322D;
+  font-size: 1.3em;
   text-align: justify;
+  opacity: 0.5;
+}
+.website a, .foodies a, .restaurant a, .other a{
+  color: grey;
+  font-family: 'Montserrat Alternates', sans-serif;
+  opacity: 0.5;
+
 }
 .other{
 
@@ -56,12 +86,21 @@ section{
 /* Mention legal */
 span{
   height: 0.5em;
+  color: grey;
+  font-size: 0.8em;
 
 }
 span:hover{
   color: #8C4303;
 }
-.social_network a:active{
-  color: #734002;
-  font-size: 0.5em;
+.social_network a{
+  color: #59584F;
+  font-size: 1.5em;
+  opacity: 0.5;
+}
+
+#inlineFormInputName2{
+  background-image: url(img/sharp-near_me-24px.png);
+  background-repeat: no-repeat;
+  background-position: right;
 }

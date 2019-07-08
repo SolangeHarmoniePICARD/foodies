@@ -4,22 +4,25 @@
   <head>
     <meta charset="utf-8">
     <title>Foodies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" lang="fr" content="Solange Harmonie PICARD">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/chef.png" />
+
+    <!-- google font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Roboto:700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
     <header class="bg-light">
       <!-- Barre de navigation -->
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="https://solangeharmoniepicard.fr/foodies/">
-            <img src="img/chef.png" width="30" height="30" class="d-inline-block align-top" alt="">Foodies
+            <img src="img/chef.png" class="d-inline-block align-top nav-img" alt="">Foodies
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,28 +30,28 @@
           <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
             <ul  class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-item nav-link" href="https://solangeharmoniepicard.fr">Petits déjeuner</a>
+                <a class="nav-item nav-link" href="https://solangeharmoniepicard.fr">Breakfast</a>
               </li>
               <li class="nav-item">
-                <a class="nav-item nav-link" href="https://github.com/SolangeHarmoniePICARD">Déjeuner</a>
+                <a class="nav-item nav-link" href="https://github.com/SolangeHarmoniePICARD">Lunch</a>
               </li>
               <li class="nav-item">
-                <a class="nav-item nav-link" href="https://twitter.com/SolangeHarmonie?lang=fr">Dîner</a>
+                <a class="nav-item nav-link" href="https://twitter.com/SolangeHarmonie?lang=fr">Dinner</a>
               </li>
               <li class="nav-item">
-                <a class="nav-item nav-link" href="https://framapiaf.org/@SolangeHarmonie">Boire un café</a>
+                <a class="nav-item nav-link" href="https://framapiaf.org/@SolangeHarmonie">Cafés</a>
               </li>
               <li class="nav-item">
-                <a class="nav-item nav-link" href="https://www.facebook.com/solangeharmonie.picard.5">Une tasse de thé</a>
+                <a class="nav-item nav-link" href="https://www.facebook.com/solangeharmonie.picard.5">Afternoon Tea</a>
               </li>
               <li class="nav-item">
                 <a class="nav-item nav-link" href="https://www.linkedin.com/in/solange-harmonie-picard/">More</a>
               </li>
               <li class="nav-item">
-            <button type="button" class="btn btn-link">Connectez-vous</button>
+            <button type="button" class="btn btn-link">Login</button>
               </li>
               <li class="nav-item">
-            <button type="button" class="btn btn-light">Rejoignez nous</button>
+            <button type="button" class="btn btn-light">Joins Us</button>
             </ul >
           </div>
         </nav>
@@ -65,22 +68,22 @@
             <div class="carousel-item active">
               <img src="img/flore.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h1>Cafés</h1>
-                <p>Les cafés mythiques...</p>
+                <h1 class="title-slider">Cafés</h1>
+                <p class="text-slider">Les cafés mythiques...</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="img/restaurant-bateau-mouche.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h1>Restaurants</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h1 class="title-slider">Restaurants</h1>
+                <p class="text-slider">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="img/home-situation.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h1>Hôtels</h1>
-                <p>Sous les toits de Paris ! </p>
+                <h1 class="title-slider">Hôtels</h1>
+                <p class="text-slider">Sous les toits de Paris ! </p>
               </div>
             </div>
           </div>
@@ -96,16 +99,14 @@
       </div>
 
         <!-- bandeau contenant la barre de recherche -->
-        <div class="navigation row">
-          <div class="search container">
+        <div class="navigation container ">
+          <div class="search row">
             <form class="form-inline col-md-7 offset-3">
-              <label class="sr-only" for="inlineFormInputName2">Name</label>
-              <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
-              <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Café de Flore, Paris">
               <div class="input-group mb-2 mr-sm-2">
-                <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Commencer à taper pour chercher...">
               </div>
-              <button type="submit" class="btn btn-primary mb-2">Trouver</button>
+              <button type="submit" class="btn btn-primary mb-2">Find Out</button>
             </form>
           </div>
         </div>
@@ -116,8 +117,8 @@
       <!--- titre --->
       <div class="bestof container">
         <div class="header">
-          <h2 class="text-center">Les places les plus visitées</h2>
-          <p class="text-center">Découvrez les restaurants, bars et hôtels les mieux notées de la villes!</p>
+          <h2 class="text-center">Most visited places</h2>
+          <p class="text-center">Discover top-rated local restaurants, cafés and bars</p>
         </div>
         <!--- première galerie d'images --->
         <div class="card-deck">
@@ -125,11 +126,12 @@
             <img src="img/cozette-dry-bar.jpg" class="card-img-top" alt="devanture du Cozette dry bar ">
             <div class="card-body">
               <h5 class="card-title">Cozette dry bar</h5>
-              <p class="card-text">
+              <p class="card-text star-color">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
+                (20 views)
               </p>
             </div>
           </div>
@@ -138,11 +140,12 @@
             <img src="img/beaubourg-hotel.jpg" class="card-img-top" alt="devanture de l'hotel BeauBourg">
             <div class="card-body">
               <h5 class="card-title">Hôtel Beaubourg</h5>
-              <p class="card-text">
+              <p class="card-text star-color">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
+                (19 views)
               </p>
             </div>
           </div>
@@ -151,11 +154,12 @@
             <img src="img/harmony-cafe.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Harmony Café</h5>
-              <p class="card-text">
+              <p class="card-text star-color">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
+                (19 views)
               </p>
             </div>
           </div>
@@ -167,12 +171,13 @@
             <img src="img/chez-nous-bar-à-vins.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Chez nous bar</h5>
-              <p class="card-text">
+              <p class="card-text star-color">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
+                (20 views)
               </p>
             </div>
           </div>
@@ -181,12 +186,13 @@
             <img src="img/MaisonAlbar-Paris-hotel.jpg" class="card-img-top" alt="chambre d'hôtel">
             <div class="card-body">
               <h5 class="card-title">Maison Albar</h5>
-              <p class="card-text">
+              <p class="card-text star-color">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
+                (19 views)
               </p>
             </div>
           </div>
@@ -195,12 +201,13 @@
             <img src="img/kb-cafeshop-paris.jpg" class="card-img-top" alt="intérieur du Kb caféshop">
             <div class="card-body">
               <h5 class="card-title">KB caféshop</h5>
-              <p class="card-text">
+              <p class="card-text star-color">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
+                (19 views)
               </p>
             </div>
           </div>
@@ -208,7 +215,7 @@
       </div>
     </section>
 
-    <footer class="plan_site">
+    <footer class="sitemap">
       <div class="foot container ">
         <div class="row">
           <article class="website d-flex flex-column col-md-3">
@@ -222,18 +229,16 @@
           </article>
           <div class="foodies d-flex flex-column col-md-3">
             <h5>For foodies</h5>
-
-              <a href="#">Code of Conduct</a>
-              <a href="#">Community</a>
-              <a href="#">Verified users</a>
-              <a href="#">Blogger Hepl</a>
-              <a href="#">Developers</a>
-              <a href="#">Mobile Apps</a>
-
+            <a href="#">Code of Conduct</a>
+            <a href="#">Community</a>
+            <a href="#">Verified users</a>
+            <a href="#">Blogger Hepl</a>
+            <a href="#">Developers</a>
+            <a href="#">Mobile Apps</a>
           </div>
           <div class="restaurant d-flex flex-column col-md-3">
             <h5>For restaurants</h5>
-            <a href="#">Ad a restaurant</a>
+            <a href="#">Add a Restaurant</a>
             <a href="#">Claim your listing</a>
             <a href="#">Business App</a>
             <a href="#">Business Owner Guidelines</a>
@@ -256,7 +261,7 @@
           <div class="communication d-flex flex-row justify-content-between">
             <div class="text-light legal_mentions d-flex flex-row">
               <span class="border-right p-2">
-                <i class="far fa-copyright">Solange Harmoie PICARD tout droit réservé</i>
+                Solange Harmoie PICARD <i class="fab fa-creative-commons"></i>
               </span>
               <span class="border-right p-2">Notre politique</span>
               <span class="border-right p-2"> Conditions d'utilisation</span>
